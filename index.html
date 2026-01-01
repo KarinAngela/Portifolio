@@ -7,12 +7,33 @@
     <link rel="stylesheet" href="man.css">
   </head>
   <body>
-   <h1> Olá, esse é um portifolio teste, me chamo Karin A. Nogueira, sou DevOps e Front End. Seja bem vindo!</h1>
-   <br>
    <header>
     <h1> Prazer, sou Karin Angela Nogueira</h1>
     <p>Atuo na área de DevOps há 2 anos, possuo conhecimento em Front End e Back End. Este protifollio tem como finalidade testar alguns dos meus conhecimento sobre a área Front End.</p>
-   
+   <div id="popup-overlay" class="overlay">
+        <div class="popup">
+            <button class="fechar-btn" onclick="fecharPopup()">×</button>
+            <h2>Olá Visitante!</h2>
+            <p>Este é um portifolio teste, me chamo Karin A. Nogueira, sou DevOps e Front End. <br> Seja bem vindo!</p>
+        </div>
+    </div>
+
+    <!--JavaScript -->
+    <script>
+        // Função para mostrar o balão
+        function mostrarPopup() {
+            document.getElementById('popup-overlay').style.display = 'flex';
+        }
+
+        // Função para fechar o balão
+        function fecharPopup() {
+            document.getElementById('popup-overlay').style.display = 'none';
+        }
+
+        // Evento que dispara a função mostrarPopup quando a página termina de carregar
+        window.onload = mostrarPopup;
+    </script>
+
     </header>
     <!--Na div class denomineia como container para me permitir fazer alterações sem modificar outras parte, ou em alguns momentos eu ter mais praticiade para requisita-la-->
     <div class="container">
@@ -24,9 +45,50 @@
         </section>
         <section id="Projetos">
             <h1> Projetos</h1>
-            <a href="https://github.com/repos?q=owner%3A%40me" class="botao-link">Projetos</a>
+            <div class="projetos-grid">
+
+              <div class="projeto-card">
+                <h3>Projetos da Faculdade de Tecnolgia Shunji Nishimura</h3>
+                <p>Projetos desenvolvidos durante minha formação acadêmica.</p>
+
+                <div class="tags">
+                  <span class="tag">...</span>
+                  <span class="tag">...</span>
+                  <span class="tag">...</span>
+                  <span class="tag">...</span>
+
+                </div>
+              </div>
+              <br>
+              
+              <a href="#">Visualizar Código</a>
+
+            </div>
+            <div class="porjecto-card">
+              <h3> Dashborad</h3>
+              <p>Dashboard interativa desenvolvida para visualização de dados em tempo real.</p>
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">API REST</span>
+            </div>
+            <br>
+            <a href="#">Ver Demo →</a>
+          </section>
+          <section id="contato">
+            <h2>Vamos conversar?</h2>
+            <p>Estou aberto a novas oportunidades e parcerias.</p>
+            <p>
+                <strong>Email:</strong> kahngueira000@gmail.com<br> <!--E-mail ficticio-->
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/karin-nogueira-586323218">/in/karin-nogueira</a>
+            </p>
         </section>
 
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Karin Angela Nogueira. Desenvolvido com HTML e CSS.</p>
+    </footer>
 
    </div>
   </body>
