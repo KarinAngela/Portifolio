@@ -59,10 +59,52 @@ body {
 
 header {
     background: var(--white);
-    padding: 3rem 1rem;
     text-align: center;
     border-bottom: 1px solid var(--border);
     font-size: 14px;
+}
+.foto {
+    margin-right: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 1px solid white
+    
+   
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000063;
+    color: white;
+    padding: 20px 20px;
+    
+    
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-toggle {
+    display: none; /* Esconde o botão em telas maiores */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .container {

@@ -8,11 +8,10 @@
   </head>
   <body>
    <header>
-    <h1> Prazer, sou Karin Angela Nogueira</h1>
-    <p>Atuo na área de DevOps há 2 anos, possuo conhecimento em Front End e Back End. Este protifollio tem como finalidade testar alguns dos meus conhecimento sobre a área Front End.</p>
+    
    <div id="popup-overlay" class="overlay">
         <div class="popup">
-            <button class="fechar-btn" onclick="fecharPopup()">×</button>
+            <button class="fechar-btn" onclick="fecharPopup()">X</button>
             <h2>Olá Visitante!</h2>
             <p>Este é um portifolio teste, me chamo Karin A. Nogueira, sou DevOps e Front End. <br> Seja bem vindo!</p>
         </div>
@@ -33,8 +32,22 @@
         // Evento que dispara a função mostrarPopup quando a página termina de carregar
         window.onload = mostrarPopup;
     </script>
+<!--Menu da pagina-->
+     <nav class="navbar">
+            <div class="logo"> <img class="foto" src="https://scontent.fmii3-1.fna.fbcdn.net/v/t39.30808-6/489032733_9490355144418494_4266890497232634756_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=dPZhkI2m2oAQ7kNvwG9HiWS&_nc_oc=AdljELbk06fTC73uB4AjPG2TWHDEzN9uzLOvjc3y9MRlYFEfdp2uTQzLVgKoW9m9Nkc&_nc_zt=23&_nc_ht=scontent.fmii3-1.fna&_nc_gid=nWZ4YAbigWuuv4tgGfdO5Q&oh=00_Afp7TXntJYHs_-dEUyDNe8Q9hEzzlj1bWdcegz2w-CsmnA&oe=6961AB1B"></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#" class="dropdown-btn">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            
+        </nav>  
 
     </header>
+
+
     <!--Na div class denomineia como container para me permitir fazer alterações sem modificar outras parte, ou em alguns momentos eu ter mais praticiade para requisita-la-->
     <div class="container">
         <section id="Sobre">
